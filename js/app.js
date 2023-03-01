@@ -1,9 +1,10 @@
 const game = new Game();
-const start_btn = document.querySelector('#begin-game');
 
-start_btn.addEventListener('click', () => {
+/** 
+ * Listens for click on `#begin-game` and calls startGame() on game object
+ */
+document.getElementById('begin-game').addEventListener('click', function(){
     game.startGame();
-
     this.style.display = 'none';
     document.getElementById('play-area').style.opacity = '1';
 });
