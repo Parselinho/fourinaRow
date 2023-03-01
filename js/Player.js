@@ -9,19 +9,20 @@ class Player {
   
     createTokens(num) {
       const startTokens = [];
+
       for (let i = 0; i < num; i++) {
-        const token = new Token(i, this);
+        let token = new Token(i, this);
         startTokens.push(token);
       }
       return startTokens;
     }
 
     get unusedTokens() {
-      
+      return this.tokens.filter(token => !token.dropped);
     }
 
     get activeToken() {
+      return this.unusedTokens[0];
     }
-
   }
   
