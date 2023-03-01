@@ -22,14 +22,15 @@ class Board {
 
     createSpaces() {
         const spaces = [];
-        for (let x = 0; x < this.columns; x++) {
-            const columns = [];
 
-            for (let y= 0; y <this.rows; y++) {
+        for (let x = 0; x < this.columns; x++) {
+            const col = [];
+
+            for (let y= 0; y < this.rows; y++) {
                 const space = new Space(x, y);
-                columns.push(space);
+                col.push(space);
             }
-            spaces.push(columns);
+            spaces.push(col);
         }
         return spaces;
     }
