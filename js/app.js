@@ -15,3 +15,15 @@ document.getElementById('begin-game').addEventListener('click', function(){
 document.addEventListener('keydown', function(event){
     game.handleKeydown(event);
 });
+
+
+// document.getElementById('begin-game')('click', function() {
+//     if ( beginGameButton.textContent.trim() === 'Start' ) {
+//         game.startGame();
+
+//         this.style.display = 'none';
+//         document.getElementById('play-area').style.opacity = '1';
+//     } else if ( beginGameButton.textContent.trim() === 'Restart' ) {
+//         window.location.reload();
+//     }
+// });
