@@ -71,8 +71,8 @@ class Game {
         if (targetSpace !== null) {
             game.ready = false;
     		activeToken.drop(targetSpace, function(){
-                game.updateGameState(activeToken, targetSpace);           
-              });;   
+            game.updateGameState(activeToken, targetSpace);           
+        });;   
         }              
     }
 
